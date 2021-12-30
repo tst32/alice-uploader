@@ -1,0 +1,51 @@
+{
+  "name": "alice-fetcher",
+  "version": "0.0.0-semantic-release",
+  "description": "script to upload resource as img/snd to dialogs.yandex.ru",
+  "main": "src/index.js",
+  "type": "module",
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --config jest.config.mjs",
+    "docs": "jsdoc2md  --helper ./rawinclude.cjs --template README.hbs --configure jsdoc.json ./src/*.js > README.md"
+  },
+  "keywords": [
+    "'dialogs.yandex.ru'"
+  ],
+  "author": "tst32",
+  "contributors": [
+    "Yurij (https://github.com/tst32)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tst32/alice-uploader.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "dotenv": "^10.0.0",
+    "form-data": "^4.0.0",
+    "formdata-polyfill": "^4.0.10",
+    "node-fetch": "^3.1.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "codecov": "^3.8.3",
+    "curlconverter": "^3.21.0",
+    "jest": "^27.4.5",
+    "jsdoc-babel": "^0.5.0",
+    "jsdoc-to-markdown": "^7.1.0",
+    "node-fetch": "^3.1.0",
+    "semantic-release": "^18.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/tst32/alice-uploader/issues"
+  },
+  "homepage": "https://github.com/tst32/alice-uploader#readme"
+}
