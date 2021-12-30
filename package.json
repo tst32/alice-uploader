@@ -1,6 +1,6 @@
 {
   "name": "alice-fetcher",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.0-development",
   "description": "script to upload resource as img/snd to dialogs.yandex.ru",
   "main": "src/index.js",
   "type": "module",
@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --config jest.config.mjs",
-    "docs": "jsdoc2md  --helper ./rawinclude.cjs --template README.hbs --configure jsdoc.json ./src/*.js > README.md"
+    "docs": "jsdoc2md  --helper ./rawinclude.cjs --template README.hbs --configure jsdoc.json ./src/*.js > README.md",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "'dialogs.yandex.ru'"
@@ -21,7 +22,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/tst32/alice-uploader.git"
+    "url": "https://github.com/tst32/alice-uploader.git"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "next"
+    ]
   },
   "license": "MIT",
   "dependencies": {
